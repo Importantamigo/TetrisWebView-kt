@@ -123,8 +123,6 @@ fun TetrisWebView(url: String, modifier: Modifier = Modifier) {
         val observer = LifecycleEventObserver { _, event ->
             when (event) {
                 Lifecycle.Event.ON_PAUSE -> {
-                    webView.dispatchWindowVisibilityChanged(android.view.View.GONE)
-                    webView.visibility = android.view.View.GONE
                     webView.postDelayed(pauseExecution, 100)
                 }
 
@@ -132,8 +130,7 @@ fun TetrisWebView(url: String, modifier: Modifier = Modifier) {
                     webView.removeCallbacks(pauseExecution)
                     webView.onResume()
                     webView.resumeTimers()
-                    webView.visibility = android.view.View.VISIBLE
-                    webView.dispatchWindowVisibilityChanged(android.view.View.VISIBLE)
+
                 }
 
                 Lifecycle.Event.ON_DESTROY -> {
