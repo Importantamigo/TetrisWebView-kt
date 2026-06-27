@@ -1,3 +1,6 @@
+permissions: 
+  contents: write
+  
 name: Build Release APKs
 on:
   workflow_dispatch:
