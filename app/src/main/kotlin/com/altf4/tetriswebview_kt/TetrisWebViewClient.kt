@@ -13,11 +13,11 @@ class TetrisWebViewClient : WebViewClient() {
     ): WebResourceResponse? {
         val requestUrl = request?.url?.toString() ?: return null
         val allowedDomains = arrayOf("tetris.com", "play.tetris.com")
-        
+
         if (allowedDomains.any { requestUrl.contains(it) }) {
             return super.shouldInterceptRequest(view, request)
         }
-        
+
         return WebResourceResponse("text/plain", "utf-8", null)
     }
 

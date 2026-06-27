@@ -25,6 +25,8 @@ fun TetrisWebView(url: String, modifier: Modifier = Modifier) {
 
     val webView = remember {
         WebView(context).apply {
+
+            setBackgroundColor(android.graphics.Color.BLACK)
             layoutParams = ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
