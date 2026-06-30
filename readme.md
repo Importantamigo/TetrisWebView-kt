@@ -8,7 +8,7 @@ This project is heavily inspired by [Halkiion's Implementation](https://github.c
 
 1. Go to the [Release](https://github.com/Importantamigo/TetrisWebView-kt/releases) section.
 2. Download the apk corresponding to your device's architecture, if you're not sure just download [app-universal-release.apk](https://github.com/Importantamigo/TetrisWebView-kt/releases/download/release-v1.0.0/app-universal-release.apk).
-3. Install the app once the download is done.
+3. Install the app once the download is done. Ignore any pl
 4. Enjoy :)
 
 ## Troubleshooting
